@@ -1,0 +1,28 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+-->
+
+{% extends 'base.html' %}
+{% block title %} 注册确认 {% endblock %}
+{% block content %}
+    <div class="row">
+        <h1 class="text-center">{{ message }}</h1>
+    </div>
+    <script>
+        window.setTimeout("window.location='/login/'", 20000);
+        <!-- 页面中通过JS代码，设置2秒后自动跳转到登录页面。-->
+    </script>
+    <h2 class="text-center">20秒后，将自动跳转到登录页面... </h2>
+
+{% endblock %}
+
